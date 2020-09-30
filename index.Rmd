@@ -1,107 +1,105 @@
 ---
-title: "Mortality in Scottish Care Homes"
-subtitle: "An intra-pandemic data linkage project"
+title: "Care Homes and COVID-19 Deaths"
+subtitle: "An early use of the COVID-19 research dataset"
 author: "David Henderson"
 institute: "Edinburgh Napier University/SCADR"
 date: "7th October 2020"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [robot]
+    css: [default]
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
 ---
-
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+# About me
 
-???
+.pull-left[
+**Research Fellow at** 
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+<img src="assets/logo.png"/> and
+
+<img src="assets/SCADR Logo_Primary_Full Colour_HI.png" width="80%"/>
+
+]
+--
+
+.pull-right[
+<img src="https://media.giphy.com/media/EAJ0bJCGHA8U/giphy.gif" width ="80%"/>
+]
+
 
 ---
-class: center, middle
+# About me
+.pull-left[
+<img src="https://media.giphy.com/media/l2YWgna32lvNFROG4/giphy.gif"/>
+]
 
-# xaringan
+--
 
-### /ʃaː.'riŋ.ɡan/
+.pull-right[
+* **PhD at Urban Big Data Centre (University of Glasgow)**
+
+<br/>
+* **Completed data linkage project involving social care data (Social Care Survey)**
+
+<br/>
+* **Member of Data and Intelligence advisory group for Scottish Government**
+]
 
 ---
 class: inverse, center, middle
 
-# Get Started
+# Outline
 
 ---
+class: centre, middle
 
-# Hello World
-
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
-
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
-```
-
+- ###Care Home Mortality Project
+--
+   
+- ###Data Quality Issues
 --
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+- ###Thoughts on the expedited application process for COVID-19 projects
 
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](https://slides.yihui.org/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
+background-image: url("/assets/Erskine-Glasgow-Large.jpg")
+background-size: cover
+
 class: center, bottom, inverse
 
-# You only live once!
+# Care Homes and COVID-19 Deaths
 
 ---
 
-# Hello Ninja
+# Background
 
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
+Almost half of all deaths attributable to COVID-19 in Scotland (and the wider UK) occurred in Care Homes. Despite this, most published research has focussed on the non-Care Home population. 
 
-1. The [remark.js](https://remarkjs.com) library;
+There are a couple of **possible** reasons for this.
 
-1. The **xaringan** package;
+1. Care Home residents can be difficult to identify in routine datasets
 
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
+1. The immediate research research response was focussed on those most likely to benefit from treatment.<sup>*</sup>
+
+<br/>
+There are even instances of studies where care home data is available (even if not of excellent quality), but analysis is presented with this population removed. 
+
+.footnote[[*] This was not explicitly decided anywhere but reflects my own observations and opinion] 
 
 ---
+# Background
 
-# remark.js
+```{r out.width="70%", eval=TRUE, fig.align='center', echo=FALSE}
+knitr::include_graphics("assets/fig_6.png")
+```
 
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
 background-image: url(`r xaringan:::karl`)
@@ -136,40 +134,12 @@ See the help page `?xaringan::moon_reader` for all possible options that you can
 
 ---
 
-# remark.js vs xaringan
+# The Old PBPP Process
 
-Some differences between using remark.js (left) and using **xaringan** (right):
+.pull-left[<img src="https://media.giphy.com/media/RIeMCWC97ln4oprAbX/giphy.gif"/>]
+--
 
-.pull-left[
-1. Start with a boilerplate HTML file;
-
-1. Plain Markdown;
-
-1. Write JavaScript to autoplay slides;
-
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;<sup>*</sup>
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-
-.footnote[[*] Not really. See next page.]
-
+.pull-right[<img src="https://media.giphy.com/media/dsiIZgRZYLBCXaFeoB/giphy.gif"/>]
 ---
 
 # Math Expressions
