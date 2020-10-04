@@ -16,7 +16,7 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
-# About me
+## About me
 
 .pull-left[
 **Research Fellow at** 
@@ -34,7 +34,7 @@ options(htmltools.dir.version = FALSE)
 
 
 ---
-# About me
+## About me
 .pull-left[
 <img src="https://media.giphy.com/media/l2YWgna32lvNFROG4/giphy.gif"/>
 ]
@@ -78,7 +78,7 @@ class: center, bottom, inverse
 
 ---
 
-# Background
+## Background
 
 Almost half of all deaths attributable to COVID-19 in Scotland (and the wider UK) occurred in Care Homes. Despite this, most published research has focussed on the non-Care Home population. 
 
@@ -94,7 +94,7 @@ There are even instances of studies where care home data is available (even if n
 .footnote[[*] This was not explicitly decided anywhere but reflects my own observations and opinion] 
 
 ---
-# Background
+## Background
 
 ```{r out.width="70%", eval=TRUE, fig.align='center', echo=FALSE}
 knitr::include_graphics("assets/fig_6.png")
@@ -102,40 +102,40 @@ knitr::include_graphics("assets/fig_6.png")
 
 
 ---
-# Background
+## Background
 
 .pull-left[
-## Example 1
+### Example 1
 
 <img src="assets/paper_3.png"/>
 ]
 
 --
 .pull-right[
-## Example 2
+### Example 2
 
 <img src="assets/paper_4.png"/>
 ]
 
 ---
-# Background
+## Background
 
 .pull-left[
-## Example 3
+### Example 3
 
 <img src="assets/paper_1.png"/>
 ]
 
 --
 .pull-right[
-## Example 4
+### Example 4
 
 <img src="assets/paper_2.png"/>
 ]
 
 ---
 
-# Background
+## Background
 
 ### Motivating factors (recap)
 
@@ -147,17 +147,17 @@ knitr::include_graphics("assets/fig_6.png")
 * **Where they have reported on care home residents, the CHI flag has been used for indentification- this is not entirely accurate**
 
 ---
-# Background
+## Background
 
-## What is UPRN?
+### What is UPRN?
 
 <img src="assets/uprn.png"/>
 
 
 ---
-# Methods
+## Methods
 
-## Aim
+### Aim
 
 **To characterise the sociodemographic and health features of those over the age of 65 that have been identified as contracting COVID-19 and their associations with mortality**
 
@@ -169,9 +169,9 @@ Main study period runs from 1st March - 30th June 2020
 Utilises the new COVID-19 Research Dataset and expedited approvals process
 
 ---
-# Methods
+## Methods
 
-## Data Sources
+### Data Sources
 
 .pull-left[
 * CHI database
@@ -197,7 +197,7 @@ Utilises the new COVID-19 Research Dataset and expedited approvals process
 
 
 ---
-# Results
+## Results
 
 --
 <br/>
@@ -213,7 +213,7 @@ class: inverse, center, middle
 # Data Quality
 
 ---
-# Cleaning Data
+## Cleaning Data
 
 * Not a huge amount to say here, except that....
 
@@ -228,9 +228,9 @@ class: inverse, center, middle
  - "DUMMY" variables
  
 ---
-# Cleaning Data
+## Cleaning Data
 
-## Project structure
+### Project structure
 
 
         directory/
@@ -250,9 +250,9 @@ class: inverse, center, middle
         -- README.md
         -- naming_protocol.md
 ---
-# Cleaning Data
+## Cleaning Data
 
-## Naming variables
+### Naming variables
 
 * There is a really useful blog on naming variables by Emily Riederer [here](https://emilyriederer.netlify.app/post/column-name-contracts/)
 
@@ -289,7 +289,7 @@ class: inverse, center, middle
 
 ---
 
-# The Old PBPP Process
+## The Old PBPP Process
 
 .pull-left[<img src="https://media.giphy.com/media/RIeMCWC97ln4oprAbX/giphy.gif"/>]
 --
@@ -297,22 +297,22 @@ class: inverse, center, middle
 .pull-right[<img src="https://media.giphy.com/media/dsiIZgRZYLBCXaFeoB/giphy.gif"/>]
 
 ---
-# PBPP
+## PBPP
 
-## Research Data Scotland
+### Research Data Scotland
 
 <img src="assets/RDS.png"/>
 ---
-# PBPP
+## PBPP
 
-## Timelines
+### Timelines
 
 <img src="assets/timeline.png"/>
 
 ---
-# PBPP
+## PBPP
 
-## Will it continue?
+### Will it continue?
 
 <img src="https://media.giphy.com/media/Ll2fajzk9DgaY/giphy.gif"/>
 
@@ -320,11 +320,11 @@ class: inverse, center, middle
 
 class: center, middle
 
-# Thanks!
+## Thanks!
 
-## Any questions?
+### Any questions?
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and available from [this link]().
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and available from [this link](https://davidhen.github.io/eDRIS_talk_20201007/#1).
 
 Twitter: @_davidhen
 
