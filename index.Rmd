@@ -7,7 +7,7 @@ date: "7th October 2020"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [default]
+    css: [default, rladies-fonts]
     nature:
       highlightStyle: github
       highlightLines: true
