@@ -69,7 +69,7 @@ class: centre, middle
 
 
 ---
-background-image: url("/assets/care_home_1.png")
+background-image: url("assets/care_home_1.png")
 background-size: cover
 
 class: center, bottom, inverse
@@ -207,8 +207,10 @@ knitr::include_graphics("https://media.giphy.com/media/pPhYIDiYzOGSA/giphy.gif")
 ```
 
 ---
+background-image: url("assets/dq.jpg")
+background-size: cover
 
-class: inverse, center, middle
+class: left, top
 
 # Data Quality
 
@@ -227,6 +229,17 @@ class: inverse, center, middle
  - Negative count values
  - "DUMMY" variables
  
+---
+## Cleaning Data
+
+```{r echo=FALSE}
+library(tweetrmd)
+include_tweet("https://twitter.com/jseabold/status/1311640342631002119")
+```
+
+### ...because twitter is the fount of all knowledge (obvs)
+
+
 ---
 ## Cleaning Data
 
@@ -283,7 +296,10 @@ class: inverse, center, middle
   
 ]  
 ---
-class: inverse, center, middle
+background-image: url("assets/ig.jpg")
+background-size: cover
+
+class: left, top
 
 # COVID-19 & PBPP
 
