@@ -207,9 +207,6 @@ knitr::include_graphics("https://media.giphy.com/media/pPhYIDiYzOGSA/giphy.gif")
 ```
 
 ---
-background-image: url("assets/dq.jpg")
-background-size: cover
-
 class: left, top
 
 # Data Quality
@@ -296,9 +293,6 @@ include_tweet("https://twitter.com/jseabold/status/1311640342631002119")
   
 ]  
 ---
-background-image: url("assets/ig.jpg")
-background-size: cover
-
 class: left, top
 
 # COVID-19 & PBPP
