@@ -207,6 +207,9 @@ knitr::include_graphics("https://media.giphy.com/media/pPhYIDiYzOGSA/giphy.gif")
 ```
 
 ---
+background-image: url("assets/dq.png")
+background-size: cover
+
 class: left, top
 
 # Data Quality
@@ -225,17 +228,6 @@ class: left, top
  - Too many categories
  - Negative count values
  - "DUMMY" variables
- 
----
-## Cleaning Data
-
-```{r echo=FALSE}
-library(tweetrmd)
-include_tweet("https://twitter.com/jseabold/status/1311640342631002119")
-```
-
-### ...because twitter is the fount of all knowledge (obvs)
-
 
 ---
 ## Cleaning Data
@@ -293,6 +285,9 @@ include_tweet("https://twitter.com/jseabold/status/1311640342631002119")
   
 ]  
 ---
+background-image: url("assets/ig.png")
+background-size: cover
+
 class: left, top
 
 # COVID-19 & PBPP
